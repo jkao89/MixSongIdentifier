@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('../../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    src: url('../../fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Semibold', sans-serif;
+    src: url('../../fonts/Open_Sans/OpenSans-SemiBold.ttf');
+}
+
+.root {
+    -fx-font-family: 'Open Sans';
+    -fx-text-fill: white;
+}
+
+#outerBorderPane {
+    -fx-background-color: #464646;
+}
+
+.icons {
+    -fx-background-color: transparent;
+}
+
+.text {
+    -fx-fill: white;
+}
+
+.list-view {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-padding: 10, 0, 5, 0;
+}
+.list-view .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: 0, 5, 0, 10;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-radius: 10;
+    -fx-background-insets: 4;
+}
+
+.slider .track {
+    -fx-pref-height:10;
+}
+
+.slider .thumb {
+    -fx-pref-height: 25;
+    -fx-pref-width: 25;
+}
+
+
+.corner {
+    -fx-background-color: transparent;
+}
+
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 5 15 5 15;
+    -fx-text-fill: white;
+    -fx-border-width: 0;
+    -fx-font-size: 16;
+}
+
+#mixName {
+    -fx-font-size: 25;
+    -fx-fill: white;
+}
+
+.trackLabels {
+    -fx-font-size: 18;
+}
+
+.trackInfo {
+    -fx-font-size: 20;
+}
+
+#tracklistLabel {
+    -fx-font-size: 16;
+    -fx-font-family: 'Open Sans Semibold';
+}
+
+#rightPane {
+    -fx-border-style: hidden hidden hidden solid;
+    -fx-border-width: 3;
+    -fx-border-color: #3D3D3D;
+}
+
+.paddedElement {
+    -fx-padding: 20 20 20 20;
+}
+
+#openFileButton {
+    -fx-background-radius: 10;
+    -fx-background-color: dimgray;
+    -fx-font-family: 'Open Sans Semibold';
+}

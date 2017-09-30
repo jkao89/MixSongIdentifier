@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" prefHeight="100" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <VBox>
+          <Region prefWidth="70" />
+   </VBox>
+   <VBox alignment="CENTER">
+       <HBox alignment="CENTER" prefWidth="100">
+           <Button fx:id="addTrackButton" styleClass="icons" disable="true" onAction="#addTrackToSpotify" visible="false"/>
+       </HBox>
+   </VBox>
+   <VBox alignment="CENTER">
+        <HBox alignment="CENTER_LEFT">
+            <Label styleClass="trackLabels" text="Title" prefWidth="50" prefHeight="40"/>
+        </HBox>
+        <HBox alignment="CENTER_LEFT">
+          <Label styleClass="trackLabels" text="Artist" prefWidth="50" prefHeight="40"/>
+        </HBox>
+   </VBox>
+   <VBox alignment="CENTER" HBox.hgrow="SOMETIMES">
+          <HBox alignment="CENTER_LEFT">
+                 <Region prefWidth="40"/>
+                 <Label styleClass="trackInfo" fx:id="trackTitle" prefHeight="40"/>
+          </HBox>
+          <HBox alignment="CENTER_LEFT">
+                 <Region prefWidth="40" />
+                 <Label styleClass="trackInfo" fx:id="artistNames" prefHeight="40"/>
+          </HBox>
+   </VBox>
+   <VBox>
+           <Region prefWidth="100" />
+   </VBox>
+</HBox>

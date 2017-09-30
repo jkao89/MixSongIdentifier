@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:id="outerBorderPane" stylesheets="/main/view/main.css"
+            fx:controller="main.controller.MainController">
+    <center>
+        <VBox styleClass="paddedElement">
+            <HBox>
+                <BorderPane fx:id="leftBorderPane" HBox.hgrow="ALWAYS">
+                    <top>
+                        <VBox>
+                            <HBox fx:id="buttonHBox" alignment="CENTER_LEFT" spacing="10">
+                                <Button fx:id="openFileButton" text="Open" onAction="#selectMixAndPlay" prefWidth="80"/>
+                                <Button styleClass="icons" fx:id="spotifyLoginButton" onAction="#spotifyLogin">
+                                        <tooltip>
+                                            <Tooltip text="Log into Spotify"/>
+                                        </tooltip>
+                                </Button>
+                                <Region HBox.hgrow="ALWAYS"/>
+                            </HBox>
+                            <HBox styleClass="paddedElement" alignment="CENTER">
+                                <Text fx:id="mixName"/>
+                            </HBox>
+                        </VBox>
+                    </top>
+                </BorderPane>
+            </HBox>
+            <Region VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </center>
+    <right>
+        <HBox>
+            <VBox fx:id="rightPane" styleClass="paddedElement" spacing="10" HBox.hgrow="ALWAYS">
+                <Label fx:id="tracklistLabel" text="Tracklist"/>
+                <HBox VBox.vgrow="ALWAYS">
+                    <ListView fx:id="trackListView" prefWidth="550"/>
+                </HBox>
+            </VBox>
+        </HBox>
+    </right>
+</BorderPane>
