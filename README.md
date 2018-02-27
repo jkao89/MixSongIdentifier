@@ -1,4 +1,4 @@
-# MixSongRecognizer
+# MixSongIdentifier
 JavaFX desktop application for identifying tracks in DJ style mixes
 
 This application uses ACRCloud for music recognition, Michael Thelin's Spotify Web API Java wrapper for Spotify interactions, and GSON for
